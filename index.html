@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <section class="main">
+        <h1>Password Generator</h1>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Please enter the number of password for generation.</label>
+                <input class="form-control" type="text" placeholder="(between 8 and 128)" id='length'>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Please select the type of password.</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option value=1>Special Characters</option>
+                    <option value=2>Numbers</option>
+                    <option value=3>Lowercase Letters</option>
+                    <option value=4>Uppercase Letters</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id='generate'>Generate</button>
+            <button type="button" class="btn btn-primary" id='copy'>Copy Password</button>
+        </form>
+    <script src="./script.js"></script>
+</body>
+</html>
